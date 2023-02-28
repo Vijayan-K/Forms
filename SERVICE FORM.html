@@ -1,0 +1,121 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=deive-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1
+{
+text-align:center;
+}
+#apply
+{
+background-color:yellowgreen;
+}
+#t1
+{
+height:900px;
+margin-left:auto;
+margin-right:auto;
+
+}
+#t1 td
+{
+padding:20px;
+font-size:20px;
+}
+#t1 td h3
+{
+text-decoration:underline;
+}
+.btn
+{
+margin-left:500px;
+}
+</style>
+</head>
+<body>
+<div class="container" >
+    <h1>Bike Service Reservation</h1><br>
+	<hr>
+<form action="" method="post" id="apply">
+<table id="t1">
+<tr colspan="2">
+<td><h3>Bike Details</h3></td>
+</tr>
+
+<tr>
+<td>  <label for="Bike">Select Bike Model</label></td>
+<td> <select name="Bike" id="bikes">
+                <option>Select Bike Model</option>
+                <option>Pulsar</option>
+                <option>Honda</option>
+                <option>Hero</option>
+                <option>Yamaha</option>
+                <option>Royal Enfield</option>
+                <option>Ktm</option>
+                <option>Tvs</option>
+             </select>
+			 </td>
+</tr>
+
+<tr>
+<td><label for="Bike">Services</label></td>
+<td><input type="checkbox" id="service" name="services">
+            <label for="services">General Service</label>
+            <input type="checkbox" id="service" name="services">
+            <label for="services">Oil Service</label>
+            <input type="checkbox" id="service" name="services">
+            <label for="services">Water Service</label></td>
+</tr>
+
+<tr>
+<td><label for="date">Reservation date</label></td>
+           <td> <input type="datetime-local" name="date" id="date"></td>
+</tr>
+
+<tr colspan="2">
+<td><h3>Personal Details</h3></td>
+</tr>
+<tr>
+<td> <label for="name">First & Last Name </label></td>
+<td> <input type="text" id="name" name="name" placeholder="First Name">
+     <input type="text" id="name" name="fname" placeholder="Last Name"></td>
+</tr>
+<tr>
+<td><label for="name"> Email </label></td>
+<td><input type="email" id="mail" name="email" placeholder=" Enter your Email"></td>
+</tr>
+<tr>
+<td><label for="name"> Mobile Number </label></td>
+<td><input type="text"  placeholder="Enter your Mobile Number"></td>
+</tr>
+<tr colspan="2">
+<td><h3>Contact Details</h3></td>
+</tr>
+<tr>
+<td><label for="name"> Your Address </label></td>
+<td> <textarea rows="4" cols="50"></textarea></td>
+</tr>
+<tr>
+<td> <label for="Bike">Your Location  </label></td>
+<td><input type="text" id="city" name="city" placeholder="Enter your State">
+<input type="text" id="city" name="city" placeholder="Enter your City"></td>
+</tr>
+<tr>
+<td> <label for="Bike">Pin Code </label></td>
+<td><input type="text" id="number" name="number"></td>
+</tr>
+</table>
+<br><br>
+<button type="submit" class="btn btn-outline-danger"><h4>Reserve</h4></button></td>
+<br><br>
+</form>
+</div>
+
+</body>
+</html>
